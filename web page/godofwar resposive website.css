@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding: o;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+#logo{
+    margin: -20px;
+}
+
+#logo img{
+    margin: 18px;
+    padding: 11px;
+    width: 46px;
+    height: 51px;
+}
+
+ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 25px;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 15px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius:40px ;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(155, 11, 11)
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/*HOME SECTION*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 150px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background:url(2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    color:white;
+    font-size: 25px;
+}
+.class1{
+    font-size: 34px;
+}
+
+.btn{
+    border-radius: 10px;
+    padding: 9px;
+    margin: 25px;
+    height: 35px;
+    width: 150px;
+    background-color: #5de1ef;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: black;
+    background-color: rgb(155, 11, 11);
+}
+
+.center{
+    text-align: center;
+}
+
+.class2{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.class3{
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+#services{
+    display: flex;
+    margin: 20px;
+}
+
+#services .box{
+    border: 2px solid black;
+    margin: 5px;
+    background-color: #e0b2b2;
+    border-radius: 10px;
+}
+
+#services .box img{
+display: block;
+margin: auto;
+height: 273px;
+}
+
+#services .box p{
+    text-align: center;
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients img{
+    height: 200px;
+}
+
+.client-item{
+    padding: 10px;
+}
+
+#client-section::before{
+    content:" ";
+    position: absolute;
+    background: url('6.jfif')no-repeat center center/cover ;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    background: url('3.jpg') no-repeat center center/cover;
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
